@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Belajar Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto;
+        }
+        .item1 {
+            grid-column-start: 2;
+            grid-column-end: 8;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div> skenario 1 : properti <b>grid-column-start</b> digunakan untuk memulai menampilkan item pada kolom 2,
+    sedangkan properti <b>grid-column-end</b> digunakan untuk berhenti menampilkan item pada kolom 8 </div>
+    <div> skenario 2 : properti <b>grid-template-columns</b> digunakan untuk menentukan jumlah (lebar) ukuran baris dan kolom sesuai dengan nilai yang di inputkan </div>
+</div>
+</body>
+</html>

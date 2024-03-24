@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            /* menjadi fleksibel dengan mengatur property display dengan nilai flex.*/
+            display: flex;
+            background-color: forestgreen;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .wadah_flex > div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p> Kesimpulan skenario 1 adalah : 3 angka tersebut akan memiliki warna background </p>
+    <p> Kesimpulan skenario 2 adalah : 3 angka tersebut akan memiliki area masing - masing dan tersusun horizontal</p>
+    <p> Kesimpulan skenario 3 adalah : 12 angka tersebut akan memiliki kolom masing - masing</p>
+    <p> Kesimpulan skenario 4 adalah : 12 angka tersebut akan digabungkan ke baris berikutnya ketika mencapai akhir baris saat ini</p>
+    <p> Kesimpulan skenario 5 adalah : 12 angka tersebut akan tersusun seperti arah baris (kiri ke kanan) dan akan digabungkan ke baris berikutnya jika melebihi lebar wadah</p>
+    <p> Kesimpulan skenario 6 adalah : 12 angka tersebut akan berpindah posisi dari kiri ke tengah</p>
+</body>
+</html>
